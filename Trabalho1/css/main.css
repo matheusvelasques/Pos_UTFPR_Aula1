@@ -1,114 +1,43 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: black, 'Times New Roman', Times, serif;
   font-size: larger;
-  display: flex;
+  width: 100%;
+  height: 100%;
+
 }
 
-h1 {
-  font-weight: normal;
-  margin: 1em 0 1px 0;
-  padding: .5em 0 .5em 3px;
-  border-left: .5em solid purple;
-  background-color: #ececec;
+header, footer {
+background-color: darkgrey;
+color: white;
+text-align: center;
+
 }
 
-h2 {
-  margin: 2em 0 0;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 2em;
-}
-
-span {
-  background-color: rosybrown;
-  padding: .5em;
-  margin: 1em;
-}
-
-div {
-  background-color: rgb(146, 126, 126);
-  padding: .5em;
-  margin: 1em;
+nav {
+background-color: rgb(93, 175, 243);
+flex-grow: 1;
 }
 
 section {
-  color: #0c2a44;
-}
-
-p {
-  color: #00ff00;
-  /* rrggbb */
-  line-height: 1.5em;
-}
-
-
-p:first-of-type:first-letter {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: black;
-  font-size: 3em;
-  font-weight: bold;
-  line-height: 1em;
-}
-
-.quote {
-  font-style: italic;
-  line-height: 2;
-  font-size: .9em;
-  /* .9em 90% do tamanho da fonte pai */
-  margin: 1em 2em 1em 4em;
-  text-align: justify;
-  text-transform: uppercase;
-}
-
-.quote::before {
-  content: "“";
-  font-size: 3em;
-  line-height: 1em;
-  vertical-align: text-bottom;
-}
-
-.quote::after {
-  content: "”";
-  font-size: 3em;
-  line-height: 1em;
-  vertical-align: text-top;
-}
-
-#main-title {
-  text-transform: uppercase;
-}
-
-/* [attr2="valor2"] {
-  color: red;
-} */
-
-[id="main-title"] {
-  color: red;
-  text-shadow: 0.1em 0.1em 0.1em purple;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.center {
-  text-align: center;
+background-color: grey;
+flex-grow: 3;
 }
 
 aside {
-  flex-grow: 0;
+background-color: orangered;
+flex-grow: 1;
 }
 
-main {
-  flex-grow: 1;
+.container {
+  height: 758px;
+  display: flex;
 }
 
 @media screen and (max-width: 800px) {
-  body {
+  .container {
     flex-direction: column;
+    text-align: center;
   }
+    
 }
-
-#menu {
-  display: flex;
-  flex-direction: column;
-}
+  
